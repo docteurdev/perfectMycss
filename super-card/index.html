@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../fontawesome/css/fontawesome.css">
+</head>
+<body>
+    <div class="list">
+        <div class="user">
+            <div class="imgBx">
+                <img src="./igm/usertof.jpg" width="100px" height="100" alt="image">
+            </div>
+            <div class="details">
+                <h3>Abib houm</h3>
+                <p>muslim woman</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <span> <img src="./igm/edit-icon.png" width="50" alt=""> </span></span>
+            <span> <img src="./igm/user-icon.png"  width="50"alt=""> </span>
+            <span> <img src="./igm/heart-icon.png" width="50" alt=""> </span>
+        </div>
+    </div>
+    <script>
+        const navigation = document.querySelector('.navigation');
+        navigation.addEventListener('click', () =>{
+            navigation.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
