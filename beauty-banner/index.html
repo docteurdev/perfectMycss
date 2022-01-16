@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Beauty banner</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="" class="logo">
+                <img src="./img/logo.jpg" width="100" alt="">
+            </a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee <br>It's <span> Starbuks</span> </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptates.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptates.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, voluptates.
+                </p>
+                <a href="">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/cofee3.png"  class="startbucks" alt="">
+            </div>
+            <ul class="thumb">
+                <li onclick="showThings('./img/cofee1.png'); changeColor('#d752b1') "><img src="./img/smcoffee1.png"  alt=""></li>
+                <li onclick="showThings('./img/cofee2.png'); changeColor('#eb7495') "><img src="./img/smcoffee2.png"  alt=""></li>
+                <li onclick="showThings('./img/cofee3.png'); changeColor(' #017143') "><img src="./img/smcoffee3.png"  alt=""></li>
+            </ul>
+            <ul class="sci" >
+                <li ><a href=""><img src="./img/faceBook.png" width="50" alt=""></a></li>
+                <li ><a href=""><img src="./img/twitter.png"  width="50"alt=""></a></li>
+                <li ><a href=""><img src="./img/intagram.png" width="50" alt=""></a></li>
+            </ul>
+        </div>
+
+        </div>
+
+    </section>
+    <script>
+        function showThings (someThings){
+         document.querySelector('.startbucks').src = someThings
+        }
+
+        function changeColor(color){
+            const circle = document.querySelector('.circle')
+             circle.style.background = color
+        }
+    </script>
+</body>
+
+</html>
