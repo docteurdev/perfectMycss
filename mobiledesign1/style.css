@@ -5,7 +5,8 @@
 }
 
 body{
-    background: black;
+    background: rgb(240, 240, 240);
+    color: #fff;
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,7 +21,7 @@ body{
 
 .first-view{
     border-radius: 20px;
-    width: 300px;
+    width: 280px;
     height: 600px;
     background: #fff;
     position: relative;
@@ -183,22 +184,25 @@ button{
 
 .formBtn{
     margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .formBtn button{
-    padding: 8px 14px;
     border-radius: 6px;
     letter-spacing: 1px;
     margin: 2px;
 }
 
 .formBtn #search{
+  padding: 8px 6px;
   background-color: #111;
   border: none;
   color: #fff;  
 }
 
 .formBtn #client{
+    padding: 8px 10px;
     position: relative;
     border: none;
     border: 1px solid #800080;
@@ -278,4 +282,156 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* view three */
+.view3{
+    background: #111;
+}
+
+.search-menu{
+    background: #dbdbdb4b;
+    height: 45px;
+    padding-top: 2px ;
+    padding-bottom: 2px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.search-menu div{
+    font-size: 12px;
+    padding: 12px 10px;
+    list-style: none;
+    color: #fff;
+    height: 100%;
+}
+
+.Active{
+    background: #111;
+}
+
+/* section 3 */
+
+.entreprise-list{
+    display: flex;
+    height: 35vh;
+    margin-top: 20px;
+}
+
+.entreprise-list .entrep-bloc1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.entrep-bloc2{
+    position: relative;
+    width: 2%;
+
+}
+.entrep-bloc2 .axis{
+    background: #fff;
+    height: 90%;
+    margin: 10px 0;
+    width: 1px;
+}
+.entrep-bloc2 .ball{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.ball1{
+    top: 25px;
+    left: -4px;
+}
+
+.ball2{
+    top: 85px;
+    left: -4px;
+}
+
+
+.ball3{
+    top: 146px;
+    left: -4px;
+}
+
+.ball4{
+    top: 205px;
+    left: -4px;
+}
+
+
+/* block3 */
+
+.entrep-bloc3{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.entrep-bloc3-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.entrep-bloc3-item div p{
+    font-size: 11px;
+}
+
+.view3-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view3-btns button{
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 11px;
+    border: 1px solid purple;
+}
+
+.best-travel{
+    margin-top: 10px;
+    height: 12vh;
+    padding: 8px;
+    border-radius: 6px;
+    background: #f1f1f10e;
+
+}
+
+.best-travel h6{
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.best-travel .view3-input input{
+    padding: 6px;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+.best-travel .view3-input .best-travel-btn{
+   padding: 6px;
+   color: #f1f1f1f1;
+   width: 40px;
+   border-radius: 3px;
+   border: none;
+   border: 1px solid purple;
+   margin-left: 4px; 
 }
