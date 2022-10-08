@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animation</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+    }
+
+    .bx{
+        height: 100px;
+        overflow: hidden;
+    }
+
+    h3{
+        font-size: 5rem;
+        color: rgba(0, 102, 0, 0.815);
+
+        animation: down-tot-top 1s forwards ;
+        animation-delay: calc(0.75 * -0.5s);
+    }
+
+    @keyframes down-tot-top {
+        0%{ 
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        100%{ 
+            opacity: 1;
+            transform: translateY(-80px);
+        }
+    }
+
+    .parent{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(10, 10, 119);
+    }
+
+    .child{
+        width: 50%;
+        height: 50%;
+        background-color: rgb(184, 51, 10);
+        transition: transform 1s cubic-bezier(0.42, 0, 0.74, 1.8) 3s;
+    }
+    
+    .parent:hover .child{
+        animation: left-to-right 1s ease-in forwards 3 alternate;
+    }
+    
+    @keyframes left-to-right {
+        0%{
+            transform: translateX(0%);
+
+        }
+        33%{
+            transform: translateY(100%);
+
+        }
+        66%{
+            transform: translateY(100%) translateX(100%);
+
+        }
+        100%{
+            transform: translateX(100%);
+
+        }
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <div class="bx">
+        <h3>Oumar dev web junior</h3>
+    </div>
+    <div class="bx">
+        <h3>Oumar dev web junior</h3>
+    </div>
+</body>
+</html>
